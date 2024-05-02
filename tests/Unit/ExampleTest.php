@@ -4,12 +4,12 @@ namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
-class ExampleTest extends TestCase
+class ExampleTest extends TestCase // klasa mora zavrsavati s "Test"
 {
     /**
      * A basic test example.
      */
-    public function test_that_true_is_true(): void
+    public function test_that_true_is_true(): void  // svaki test mora pocinjati s "test"
     {
         $this->assertTrue(true);
     }

@@ -15,5 +15,12 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
+        $response->assertSeeText('wonderful documentation');
+
+          $response = $this->get('/x');
+
+        $response->assertStatus(404);    
+        //TODO ne radi, nije radilo jer je bio upppercase slucaj
+        $response->assertSeeText('Not Found');
     }
 }

@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <form method="post" action="/testmatch">
+        @csrf
+        <input type="submit" name="test match">
+    </form>
+    <hr>
+    <form method="post" action="/testpost">
+        <input type="submit" name="test post">
+    </form>
+    <hr>
+    <form method="post" action="/testany">
+        <input type="hidden" name="_method" value="PUT">
+        <input type="submit" name="test any">
+    </form>
+    <hr>
+</body>
+
+</html>
